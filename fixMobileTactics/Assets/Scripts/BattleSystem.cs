@@ -39,7 +39,7 @@ public class BattleSystem : MonoBehaviour
 		GameObject enemyGO = Instantiate(enemyPrefab, enemyBattleStation);
 		enemyUnit = enemyGO.GetComponent<Unit>();
 
-		dialogueText.text = "Incoming" + enemyUnit.unitName + ". Get ready for attack...";
+		dialogueText.text = "Incoming " + enemyUnit.unitName + " Get ready for attack...";
 
 		playerHUD.SetHUD(playerUnit);
 		enemyHUD.SetHUD(enemyUnit);
